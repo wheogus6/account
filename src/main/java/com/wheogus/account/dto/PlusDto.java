@@ -1,6 +1,5 @@
 package com.wheogus.account.dto;
 
-import com.wheogus.account.entity.Plus;
 import lombok.*;
 
 
@@ -21,12 +20,6 @@ public class PlusDto {
 
     private String pContent;
 
-    public static Plus createPlusDto(Plus plus) {
-        return new Plus(
-                plus.getPlusId(),
-                plus.getPlusM(),
-                plus.getPDate(),
-                plus.getPContent()
-        );
-    }
+
+
 }

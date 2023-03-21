@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	runtimeOnly("com.h2database:h2")
 	runtimeOnly("com.mysql:mysql-connector-j")
@@ -26,7 +26,11 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok:1.18.24")
 
 
+// https://mvnrepository.com/artifact/org.mybatis/mybatis-spring
+	implementation("org.mybatis:mybatis-spring:2.0.7")
 
+// https://mvnrepository.com/artifact/org.mybatis/mybatis
+	implementation("org.mybatis:mybatis:3.5.9")
 
 
 
